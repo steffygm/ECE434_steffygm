@@ -19,9 +19,10 @@ for i in range(width):
     for j in range(height):
         grid[i].append("#")
 
-def pbar(window):
+def grid_display(window):
     global x
     global y
+    global grid
     while 1:
         for x_out in range(width):
             for y_out in range(height):
@@ -30,22 +31,16 @@ def pbar(window):
         window.refresh()
         time.sleep(0.05)
 
-BUTTON_R = "P9_21"
-BUTTON_G = "P9_22"
-BUTTON_Y = "P9_23"
-BUTTON_B = "P9_24"
-
-GPIO.setup(BUTTON_R, GPIO.IN)
-GPIO.setup(BUTTON_G, GPIO.IN)
-GPIO.setup(BUTTON_Y, GPIO.IN)
-GPIO.setup(BUTTON_B, GPIO.IN)
-
 def updatePOS(channel):
     global x
     global y
     global grid
     state = GPIO.input(channel)
     if(state == 1):
+        if(channel == BUTTON_X):
+            for i in range(width):
+                for j in range(height):
+                    grid[i][j] = "#"
         if(channel == BUTTON_R):
             x-=1
         if(channel == BUTTON_G):
@@ -64,13 +59,26 @@ def updatePOS(channel):
             y = 0
         grid[x][y] = " "
 
+BUTTON_X = "P9_17"
+BUTTON_R = "P9_21"
+BUTTON_G = "P9_22"
+BUTTON_Y = "P9_23"
+BUTTON_B = "P9_24"
+
+GPIO.setup(BUTTON_X, GPIO.IN)
+GPIO.setup(BUTTON_R, GPIO.IN)
+GPIO.setup(BUTTON_G, GPIO.IN)
+GPIO.setup(BUTTON_Y, GPIO.IN)
+GPIO.setup(BUTTON_B, GPIO.IN)
+
+GPIO.add_event_detect(BUTTON_X, GPIO.BOTH, callback=updatePOS)
 GPIO.add_event_detect(BUTTON_R, GPIO.BOTH, callback=updatePOS)
 GPIO.add_event_detect(BUTTON_G, GPIO.BOTH, callback=updatePOS)
 GPIO.add_event_detect(BUTTON_Y, GPIO.BOTH, callback=updatePOS)
 GPIO.add_event_detect(BUTTON_B, GPIO.BOTH, callback=updatePOS)
 
 try:
-    curses.wrapper(pbar)
+    curses.wrapper(grid_display)
 except KeyboardInterrupt:
     print("\nCleaning Up")
     GPIO.cleanup()
