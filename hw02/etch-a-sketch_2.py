@@ -1,24 +1,26 @@
 #!/usr/bin/env python3
-
-
 import Adafruit_BBIO.GPIO as GPIO
 import time
 import curses
 
-
+# Width/Height complete
 width = 50
 height = 25
 
+# Initialize position to center
 x = int(width/2)
 y = int(height/2)
 
+# Declare grid array
 grid = []
 
+# Initalize Grid values
 for i in range(width):
     grid.append([])
     for j in range(height):
         grid[i].append("#")
 
+# Update Grid Display
 def grid_display(window):
     global x
     global y
@@ -31,6 +33,7 @@ def grid_display(window):
         window.refresh()
         time.sleep(0.05)
 
+# Update Position and Grid Values
 def updatePOS(channel):
     global x
     global y
@@ -59,24 +62,28 @@ def updatePOS(channel):
             y = 0
         grid[x][y] = " "
 
+# Pin Declaration
 BUTTON_X = "P9_17"
 BUTTON_R = "P9_21"
 BUTTON_G = "P9_22"
 BUTTON_Y = "P9_23"
 BUTTON_B = "P9_24"
 
+# GPIO Pin Setup
 GPIO.setup(BUTTON_X, GPIO.IN)
 GPIO.setup(BUTTON_R, GPIO.IN)
 GPIO.setup(BUTTON_G, GPIO.IN)
 GPIO.setup(BUTTON_Y, GPIO.IN)
 GPIO.setup(BUTTON_B, GPIO.IN)
 
+# Button Event Assign
 GPIO.add_event_detect(BUTTON_X, GPIO.BOTH, callback=updatePOS)
 GPIO.add_event_detect(BUTTON_R, GPIO.BOTH, callback=updatePOS)
 GPIO.add_event_detect(BUTTON_G, GPIO.BOTH, callback=updatePOS)
 GPIO.add_event_detect(BUTTON_Y, GPIO.BOTH, callback=updatePOS)
 GPIO.add_event_detect(BUTTON_B, GPIO.BOTH, callback=updatePOS)
 
+# Busy loop & draw grid to screen
 try:
     curses.wrapper(grid_display)
 except KeyboardInterrupt:

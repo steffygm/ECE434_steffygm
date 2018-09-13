@@ -11,4 +11,7 @@ Measuring agpio pin on an Oscilloscope
 Etch-a-sketch
     File: etch-a-sketch_2.py
     this file runs in the terminal, displays a grid that is 50x25 and the game is controlled by 4 direction buttons and a reset button
-    
+
+Oscilliscope Results
+    File: hw02_table.xlsx
+    this file contains the results from each question for each script technique as well as a chart for specific input values and the output period. 
