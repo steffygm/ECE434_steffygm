@@ -12,3 +12,10 @@ Etch-a-sketch
     File: etch-a-sketch_2.py
     this file runs in the terminal, displays a grid that is 50x25 and the game is controlled by 4 direction buttons and a reset button
     
+========================
+Professor Yoder's Comments
+
+Good start, but I don't see your comparison tables or answers to questions.
+Show me your tables and I'll give you some points back.
+
+Score:5/10
