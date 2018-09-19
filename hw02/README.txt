@@ -37,3 +37,8 @@ Good start, but I don't see your comparison tables or answers to questions.
 Show me your tables and I'll give you some points back.
 
 Score:5/10
+
+
+Found your table.  Looks good, but I was expecting htop to report % CPU usage.
+
+Score:  8/10

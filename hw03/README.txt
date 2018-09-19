@@ -10,3 +10,10 @@ Etch-a-sketch
     - config pins P8_41, P8_42, P8_33, P8_35 to qep, and properly connect the rotary encoders to these two sets of pins
     - make the etch-a-sketch program (etch-a-sketch_3.py) executable and run it on the BB
     - heading up the tmp101 will clear the etch-a-sketch board
+
+========================
+Professor Yoder's Comments
+
+Looks good.  You got it this time.
+
+Score:  10/10
