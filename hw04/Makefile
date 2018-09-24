@@ -1,5 +1,5 @@
-CC = gcc
-CFLAGS  := -O3 -g
+CC= gcc
+CFLAGS= -O3 -g
 #
 # Programs
 #
