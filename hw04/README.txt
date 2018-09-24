@@ -10,7 +10,7 @@ NOTE: these two parts of the can not be run simutaneously, becuase there is a sh
         P9_14: out
         P9_15: in
         P9_17: in
-    2) type "make all" into terminal and two executables will be outputed
+    2) type "make" into terminal and two executables will be outputed
         - button_2_led_mmap: this maps the state of a button to an led (13->15), (14->17)
         - fast_led_mmap: this blinks an led with a defined period inside of the c file
 
