@@ -16,6 +16,11 @@ NOTE: these two parts of the can not be run simutaneously, becuase there is a sh
 
     3) run either of the two executables to examine the mmap implementation
 
+    OSCILLISCOPE RESULTS:
+        fastest period: 100us (input), read 125us (oscilliscope)
+        CPU usage <5%, would jump around at initial run of 'htop'
+
+
 2. SPI lcd display
     1) run the SPI_go.sh script
         - display tux on the lcd
