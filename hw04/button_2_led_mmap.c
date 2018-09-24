@@ -99,13 +99,6 @@ int main(int argc, char *argv[]) {
 
     printf("Start blinking LED P9_14\n");
     while(keepgoing) {
-        // printf("ON\n");
-        //*gpio_setdataout_addr_1 = P9_14;
-
-        //usleep(250000);
-        // printf("OFF\n");
-        //*gpio_cleardataout_addr_1 = P9_14;
-
         if(*gpio_datain_0 & P9_17)
         {
             *gpio_setdataout_addr_0 = P9_13;
