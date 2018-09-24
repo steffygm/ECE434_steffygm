@@ -3,7 +3,7 @@ CFLAGS  := -O3 -g
 #
 # Programs
 #
-all: gpioThru gpioToggle
+all: button_2_led_mmap fast_led_mmap
 
 button_2_led_mmap: button_2_led_mmap.c beaglebone_gpio.h
 	$(CC) $(CFLAGS) -o $@ $<
