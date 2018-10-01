@@ -54,7 +54,8 @@ Kernel Modules
         [  +2.422633] EBBChar: Sent 11 characters to the user
         [  +0.000643] EBBChar: Device successfully closed
 
-    - I did the exercise to copy P9_15 to P9_16.
+    - I did the exercise to copy P9_15 (GPIO 48) to P9_16 (GPIO 51).
     - When I toggled the pin (As fast as Possible) I got a period of around 150 us.
         The CPU Usage was much lower than the previous times when we did a similar program.
+    I created a rudamentary file to toggle the LED, it is called gpio_toggle.c It blinks so fast that the human eye cannot read it.
 
