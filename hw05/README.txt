@@ -59,3 +59,11 @@ Kernel Modules
         The CPU Usage was much lower than the previous times when we did a similar program.
     I created a rudamentary file to toggle the LED, it is called gpio_toggle.c It blinks so fast that the human eye cannot read it.
 
+========================
+Professor Yoder's Comments
+
+Looks good.  
+
+I don't see where you installed the new kernel.
+
+Score:  9/10
