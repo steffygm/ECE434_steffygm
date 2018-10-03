@@ -27,3 +27,10 @@ NOTE: these two parts of the can not be run simutaneously, becuase there is a sh
         - rotate tux on the lcd
         - display text (My Name) on the lcd
         - run the movie file "RedsNighmare" on the lcd
+        
+========================
+Professor Yoder's Comments
+
+Looks good.  Did you try toggling without theusleep()?
+
+Score:  10/10
