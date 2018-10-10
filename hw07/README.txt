@@ -15,3 +15,8 @@ Blynk
 A slider
     the same app as above also implements a slider for a LED connected to pin P9_14.
     Note: I did not need to configure the pin in order for it to work on my device. if it doesn't work the pin may need configed to pwm vs gpio
+    
+========================
+Professor Yoder's Comments
+
+Score:  10/10
