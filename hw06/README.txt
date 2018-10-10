@@ -39,3 +39,10 @@ Questions:
 
 11) Why can the External event in Figure 4 start sooner?
     it is now preemptive, because the irq interrupt goes to a small temporary thread that allows higher priority, tasks to be placed on the process over smaller priority threads
+    
+========================
+Professor Yoder's Comments
+
+Score:  10/10
+
+Try searching "linux mainline kernel"
