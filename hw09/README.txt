@@ -2,6 +2,7 @@ Griffin Steffy
 hw09
 ECE434-01
 
+NOTE: I will get the other oscilliscope captures on Tuesday (10/23) if it is not already graded
 
 2.6 Blinking an LED
 	- cd part2.6
