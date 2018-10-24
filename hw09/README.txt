@@ -40,3 +40,11 @@ Part      Speed      Jitter?      Stable?             StdDev?     PNG
 |         |          |            |                   |           |
 5.10      |          |            |                   |           | 
 |         |          |            |                   |           |
+
+========================
+Professor Yoder's Comments
+
+Nice table, but there's information missing.  You should have speed's for all the 
+parts.  You should also be able to get the StdDevs.
+
+Score:  8/10
