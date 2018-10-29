@@ -11,3 +11,5 @@ Loggin in Sheets
 	I used the tmp101 sensor to log the data into the google sheet. 
 	The file temp_sheet.sh logs 1 current temperature reading into the sheet. The file
 	The file long_temp_log.sh logs 15 data points over the course of 75 minutes into the data sheet
+
+	I have the pins configuring to P9_17 & P9_18 inside of the bash scripts
