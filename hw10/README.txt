@@ -13,3 +13,11 @@ Loggin in Sheets
 	The file long_temp_log.sh logs 15 data points over the course of 75 minutes into the data sheet
 
 	I have the pins configuring to P9_17 & P9_18 inside of the bash scripts
+
+========================
+Professor Yoder's Comments
+
+Looks logged.  You have an awkward use of bash scripts and python.  I'd rather see
+one Python program.
+
+Score:  9/10
